@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div.box
+        div#msg-panel
+            ul#messages
+        form
+            input(id='m' autocomplete='off' )
+            button Send
+        script(src='/socket.io/socket.io.js')
+        script(src='http://code.jquery.com/jquery-1.11.1.js')
+        script(src='/javascripts/front-end.js')

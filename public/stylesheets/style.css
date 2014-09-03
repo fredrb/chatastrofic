@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.box{
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+    border: 1px gray solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px black;
+    padding: 10px;
+}
+
+#msg-panel{
+    width: 98%;
+    height: 80%;
+    margin-left: 1%;
+    border: 1px gray solid;
+    border-radius: 3px;
+}
+
+#messages{
+    list-style: none;
+}
+
+.box span{
+    width: 98%;
+    height: 5%;
+    color: gray;
+    font-size: 13px;
+}
+
+.box form{
+    height: 13%;
+    padding: 2px;
+
+}
+
+.box form input{
+    width: 80%;
+    margin-right: 1px;
+    height: 50%;
+}
+
+.box form button{
+    width: 17%;
+    height: 60%;
+}
+
