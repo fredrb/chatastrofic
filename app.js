@@ -3,16 +3,32 @@ var app  = express();
 var http = require('http').Server(app);
 var io   = require('socket.io')(http);
 
+var router = express.Router();
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.use(express.static(__dirname + '/public'));
 
+router.get('/', function(){
+  res.render('imsg', {
+    title : 'Message app'          
+  });          
+});
+
+router.get('/gba', function(){
+  res.end("This will soon be GBA route");
+});
+
+app.use('/', router);
+
+/*
 app.get('/', function(req, res){
    res.render('imsg', {
       title  : 'Message App'
    });
 });
+*/
 
 io.on('connection', function(socket){
 
@@ -25,7 +41,7 @@ io.on('connection', function(socket){
    });
 });
 
-http.listen(8080, function(){
+http.listen(process.env.PORT || 8080, function(){
    console.log('Server started!');
 });
 
