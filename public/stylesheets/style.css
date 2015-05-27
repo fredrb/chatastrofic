@@ -3,6 +3,7 @@
     height: 400px;
     overflow-y: scroll;
     overflow-x:hidden;
+    border : 1px gray solid;
 }
 
 #msg-panel ul {
@@ -15,6 +16,7 @@
 }
 
 #msg-box {
+    margin : 8px;
     text-align: center;
 }
 
@@ -27,3 +29,6 @@
 #footer {
     text-align: right;
 }
+
+#header { text-align : center; }
+
