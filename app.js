@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 
 router.get('/', function(req, res){
   res.render('imsg', {
-    title : 'Message app'          
+    title : 'Redcore Foundation'          
   });          
 });
 
