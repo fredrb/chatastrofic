@@ -10,13 +10,13 @@ app.set('view engine', 'jade');
 
 app.use(express.static(__dirname + '/public'));
 
-router.get('/', function(){
+router.get('/', function(req, res){
   res.render('imsg', {
     title : 'Message app'          
   });          
 });
 
-router.get('/gba', function(){
+router.get('/gba', function(req, res){
   res.end("This will soon be GBA route");
 });
 
