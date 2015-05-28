@@ -41,15 +41,6 @@ io.on('connection', function(socket){
    });
 });
 
-
-/*
-Due to lates virtual-host update the express apps are no longer being
-started individually - they are all exported as express applications and
-loaded in vhost process
-
-http.listen(process.env.PORT || 8080, function(){
+http.listen(3001, function(){
    console.log('Server started!');
 });
-*/
-
-module.exports = app;
